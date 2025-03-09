@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "airbnb-base",
+    "plugin:vue/vue3-recommended"
+  ],
+  "rules": {
+    "linebreak-style": 0,
+    "import/no-extraneous-dependencies": 0,
+    "vue/multi-word-component-names": 0,
+    "max-classes-per-file": 0
+  }
+}
