@@ -73,7 +73,7 @@
 
   const tip = computed(() => {
     const { height, width } = props
-    return `尺寸为${width}*${height},${validTip.value}}`
+    return `尺寸为${width}*${height},${validTip.value}`
   })
 
   const emits = defineEmits(['update:modelValue']);
