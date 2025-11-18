@@ -1,6 +1,6 @@
 <template>
   <a-config-provider :locale="locale">
-    <CAvatar v-model="img" />
+    <CSignature text="hhhyy" v-model="img" style="margin-top: 20px;"></CSignature>
   </a-config-provider>
 </template>
 
@@ -8,13 +8,18 @@
   import zhCN from 'ant-design-vue/es/locale/zh_CN';
   import { ref } from 'vue';
   import CAvatar from './components/CAvatar.vue';
+  import CSignature from './components/CSignature.vue'
   import testPng from './assets/images/test.jpg';
 
   const locale = ref(zhCN);
-  const img = ref('');
+  const img = ref(testPng);
 </script>
 
 <style lang="less">
+:root {
+  --colorPrimary: #0082FF
+}
+
 * {
   margin: 0;
   padding: 0;
